@@ -1,0 +1,40 @@
+[tool.black]
+line-length = 100
+target-version = ["py314"]
+include = "\\.pyi?$"
+extend-exclude = """
+(
+  /(
+      \\.pytest_cache
+    | __pycache__
+    | data
+    | logs
+    | screenshots
+  )/
+)
+"""
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+extend-exclude = [
+  ".pytest_cache",
+  "__pycache__",
+  "data",
+  "logs",
+  "screenshots",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = [
+  ".pytest_cache",
+  "__pycache__",
+  "data",
+  "logs",
+  "screenshots",
+]

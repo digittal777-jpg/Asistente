@@ -1,0 +1,196 @@
+{
+  "profile": "bundled-default",
+  "targets": {
+    "youtube_search_bar": {
+      "app": "youtube",
+      "capture_size": [460, 62],
+      "semantic_role": "search_bar",
+      "scene_tags": ["youtube_results", "youtube_watch"],
+      "state_tags": ["visible", "query_input"],
+      "verification_role": "query_entry"
+    },
+    "youtube_search_button": {
+      "app": "youtube",
+      "capture_size": [72, 56],
+      "semantic_role": "search_submit",
+      "scene_tags": ["youtube_results", "youtube_watch"],
+      "state_tags": ["visible", "clickable"],
+      "verification_role": "query_submit"
+    },
+    "youtube_results_primary_region": {
+      "app": "youtube",
+      "semantic_role": "primary_reading_region",
+      "scene_tags": ["youtube_results"],
+      "state_tags": ["visible", "search_results"],
+      "verification_role": "search_results_capture"
+    },
+    "youtube_results_column": {
+      "app": "youtube",
+      "semantic_role": "results_column",
+      "scene_tags": ["youtube_results"],
+      "state_tags": ["visible", "search_results"],
+      "verification_role": "search_results_anchor"
+    },
+    "youtube_result_title": {
+      "app": "youtube",
+      "semantic_role": "search_result_title",
+      "scene_tags": ["youtube_results", "youtube_watch"],
+      "state_tags": ["visible", "search_result"],
+      "verification_role": "result_open_candidate"
+    },
+    "youtube_result_card": {
+      "app": "youtube",
+      "semantic_role": "search_result_card",
+      "scene_tags": ["youtube_results", "youtube_watch"],
+      "state_tags": ["visible", "search_result"],
+      "verification_role": "result_open_candidate"
+    },
+    "youtube_watch_primary_region": {
+      "app": "youtube",
+      "semantic_role": "primary_reading_region",
+      "scene_tags": ["youtube_watch"],
+      "state_tags": ["visible", "watch_content"],
+      "verification_role": "watch_content_capture"
+    },
+    "youtube_watch_metadata_region": {
+      "app": "youtube",
+      "semantic_role": "metadata_region",
+      "scene_tags": ["youtube_watch"],
+      "state_tags": ["visible", "metadata"],
+      "verification_role": "watch_metadata_capture"
+    },
+    "youtube_watch_sidebar_region": {
+      "app": "youtube",
+      "semantic_role": "sidebar_region",
+      "scene_tags": ["youtube_watch"],
+      "state_tags": ["visible", "suggestions"],
+      "verification_role": "watch_sidebar_capture"
+    },
+    "youtube_captions_region": {
+      "app": "youtube",
+      "semantic_role": "captions_region",
+      "scene_tags": ["youtube_watch"],
+      "state_tags": ["visible", "captions"],
+      "verification_role": "captions_capture"
+    },
+    "youtube_more_actions_button": {
+      "app": "youtube",
+      "semantic_role": "more_actions_button",
+      "scene_tags": ["youtube_watch"],
+      "state_tags": ["visible", "clickable"],
+      "verification_role": "transcript_reveal"
+    },
+    "youtube_transcript_toggle": {
+      "app": "youtube",
+      "semantic_role": "transcript_toggle",
+      "scene_tags": ["youtube_watch"],
+      "state_tags": ["visible", "clickable"],
+      "verification_role": "transcript_reveal"
+    },
+    "youtube_transcript_region": {
+      "app": "youtube",
+      "semantic_role": "transcript_region",
+      "scene_tags": ["youtube_watch"],
+      "state_tags": ["visible", "transcript"],
+      "verification_role": "transcript_capture"
+    },
+    "google_search_bar": {
+      "app": "google",
+      "capture_size": [540, 70],
+      "semantic_role": "search_bar",
+      "scene_tags": ["browser_serp"],
+      "state_tags": ["visible", "query_input"],
+      "verification_role": "query_entry"
+    },
+    "google_results_search_bar": {
+      "app": "google",
+      "semantic_role": "search_bar",
+      "scene_tags": ["browser_serp"],
+      "state_tags": ["visible", "query_input"],
+      "verification_role": "query_entry"
+    },
+    "google_results_primary_region": {
+      "app": "google",
+      "semantic_role": "primary_reading_region",
+      "scene_tags": ["browser_serp"],
+      "state_tags": ["visible", "search_results"],
+      "verification_role": "search_results_capture"
+    },
+    "google_results_column": {
+      "app": "google",
+      "semantic_role": "results_column",
+      "scene_tags": ["browser_serp"],
+      "state_tags": ["visible", "search_results"],
+      "verification_role": "search_results_anchor"
+    },
+    "google_result_title": {
+      "app": "google",
+      "semantic_role": "search_result_title",
+      "scene_tags": ["browser_serp"],
+      "state_tags": ["visible", "search_result"],
+      "verification_role": "result_open_candidate"
+    },
+    "google_result_card": {
+      "app": "google",
+      "capture_size": [760, 120],
+      "semantic_role": "search_result_card",
+      "scene_tags": ["browser_serp"],
+      "state_tags": ["visible", "search_result"],
+      "verification_role": "result_open_candidate"
+    },
+    "browser_address_bar": {
+      "app": "browser",
+      "capture_size": [620, 58],
+      "semantic_role": "address_bar",
+      "scene_tags": ["browser_serp", "browser_article", "youtube_results", "youtube_watch"],
+      "state_tags": ["visible", "query_input"],
+      "verification_role": "navigation_entry"
+    },
+    "browser_primary_reading_region": {
+      "app": "browser",
+      "semantic_role": "primary_reading_region",
+      "scene_tags": ["browser_article"],
+      "state_tags": ["visible", "content"],
+      "verification_role": "article_capture"
+    },
+    "browser_content_region": {
+      "app": "browser",
+      "semantic_role": "content_region",
+      "scene_tags": ["browser_article"],
+      "state_tags": ["visible", "content"],
+      "verification_role": "article_capture"
+    },
+    "taskbar_brave": {
+      "app": "taskbar",
+      "capture_size": [72, 72],
+      "semantic_role": "taskbar_app",
+      "scene_tags": ["desktop"],
+      "state_tags": ["visible", "launchable"],
+      "verification_role": "app_focus_candidate"
+    },
+    "taskbar_word": {
+      "app": "taskbar",
+      "capture_size": [72, 72],
+      "semantic_role": "taskbar_app",
+      "scene_tags": ["desktop"],
+      "state_tags": ["visible", "launchable"],
+      "verification_role": "app_focus_candidate"
+    },
+    "taskbar_spotify": {
+      "app": "taskbar",
+      "capture_size": [72, 72],
+      "semantic_role": "taskbar_app",
+      "scene_tags": ["desktop"],
+      "state_tags": ["visible", "launchable"],
+      "verification_role": "app_focus_candidate"
+    },
+    "document_body": {
+      "app": "document",
+      "capture_size": [720, 440],
+      "semantic_role": "document_body",
+      "scene_tags": ["browser_article", "unknown"],
+      "state_tags": ["visible", "editable_surface"],
+      "verification_role": "document_surface"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+mss>=10.0.0
+Pillow>=11.0.0
+opencv-python>=4.10.0
+numpy>=2.0.0
+pytesseract>=0.3.13
+pyautogui>=0.9.54
+pyperclip>=1.9.0
+keyboard>=0.13.5
+mouse>=0.7.1
+customtkinter>=5.2.2
+pygetwindow>=0.0.9
+pycaw>=20240210
+comtypes>=1.4.10
+rapidfuzz>=3.14.0
